@@ -1,0 +1,74 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+:root {
+  --header-height: 56px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container-height {
+  height: calc(100vh - var(--header-height));
+}
+
+.mw-500 {
+  max-width: 500px;
+}
+
+.float-right {
+  float: right;
+}
+
+.h-200 {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.mr-2 {
+  margin-right: ($spacer * 0.5) !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #443062;
+  border-color: #3e2c5a;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+}
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+
+.text-primary {
+  color: #563d7c !important;
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #3e2c5a !important;
+}
