@@ -1,0 +1,74 @@
+@import './variables';
+
+:root {
+  --header-height: 56px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container-height {
+  height: calc(100vh - var(--header-height));
+}
+
+.mw-500 {
+  max-width: 500px;
+}
+
+.float-right {
+  float: right;
+}
+
+.h-200 {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.mr-2 {
+  margin-right: ($spacer * 0.5) !important;
+}
+
+.btn-primary {
+  color: $white;
+  background-color: $bg-color;
+  border-color: $border-color;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  color: $white;
+  background-color: $bg-color-light;
+  border-color: $border-color-light !important;
+}
+.btn-primary:focus {
+  box-shadow: $box-shadow !important;
+}
+.btn-primary:disabled {
+  color: $white;
+  background-color: $bg-color;
+  border-color: $border-color;
+}
+
+.text-primary {
+  color: $text-color !important;
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+  color: $text-color-light !important;
+}
