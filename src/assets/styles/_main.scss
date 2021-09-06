@@ -1,4 +1,4 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import './variables';
 
 :root {
   --header-height: 56px;
@@ -45,30 +45,30 @@ html {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  color: $white;
+  background-color: $bg-color;
+  border-color: $border-color;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  color: #fff;
-  background-color: #443062;
-  border-color: #3e2c5a;
+  color: $white;
+  background-color: $bg-color-light;
+  border-color: $border-color-light !important;
 }
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+  box-shadow: $box-shadow !important;
 }
 .btn-primary:disabled {
-  color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  color: $white;
+  background-color: $bg-color;
+  border-color: $border-color;
 }
 
 .text-primary {
-  color: #563d7c !important;
+  color: $text-color !important;
 }
 
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #3e2c5a !important;
+  color: $text-color-light !important;
 }
